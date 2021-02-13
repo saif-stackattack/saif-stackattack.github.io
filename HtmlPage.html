@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Valentines day</title>
+</head>
+<body>
+    <div class="heart1">
+    </div>
+    <div class="heart2">
+    </div>
+
+    <div class="container">
+        <h1>Happy valentines day <span>&ensp;astere</span>!!!</h1>
+        <div class="paragraph">
+            <p>Yes i know this is cheesy but i unfortunately couldn't buy you a gift as i would've had to order it to your house and you know what would happen if your mum saw so i coded this instead. Happy valentines day astaraaa i love you very very much!!!!</p>
+        </div>
+    </div>
+    <div class="scroll">
+        <h4>scroll down ;)</h4>
+    </div>
+    <div class="info">
+        <h5>This randomly generates something so some could be repeated!</h5>
+    </div>
+    <button class="naruto" onmousedown="naruto.play()"><img src="https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/07/Naruto-meme-header.jpg" width="65" height="30"</button>
+    <div class="generatee">
+        <div class="text">
+            <h2 id="anime"></h2>
+            <button class="generator" onclick="generate()">something i love about you</button>
+        </div>
+        </div>
+        <script>
+            var naruto = new Audio()
+            naruto.src = "arctic_monkeys_505.mp3"
+
+            function generate() {
+                var animes = {
+                    "700 episodes": "Your smile",
+                    "180 episodes": "How you always care about me",
+                    "71 episodes": "You never get bored of me or lose interest",
+                    "110 episodes": "Your beautiful hair",
+                    "26 episodes": "You're extremely pretty",
+                    "12 episodes": "Your intelligence",
+                    "lol": "You're a hottie xD",
+                    "24 episodes": "You have future ambitions",
+                    "9": "You're really open to me",
+                    "nisn": "Your eye lids are THE BEST",
+                    "buwfebfuwe": "Your forehead which somehow has no creases whatsoever",
+                    "12": "You're 5'3 so you're an amazing arm rest",
+                    "whbfbw": "Your perfectly shaped nose which i want to bite",
+                    "60 episodes": "The fact that you love naruto just like me",
+                    "udsbuwe": "You're really fun to talk to as i never find you boring",
+                };
+
+                var keys = Object.keys(animes);
+                var episodes = keys[Math.floor(Math.random() * keys.length)];
+                var anime = animes[episodes];
+
+                document.getElementById("anime").innerHTML = anime;
+                document.getElementById("episodes").innerHTML = episodes
+            }
+        </script>
+</body>
+</html>
