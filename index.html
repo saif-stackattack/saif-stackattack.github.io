@@ -3,7 +3,7 @@
 <head>
     <link href="css/style.css" rel="stylesheet" />
     <meta charset="utf-8" />
-    <title>Valentines day</title>
+    <title>cuties only page</title>
 </head>
 <body>
     <div class="heart1">
@@ -11,10 +11,23 @@
     <div class="heart2">
     </div>
 
+    <nav>
+        <div>
+            <h1>Astere</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#generator">Generator</a></li>
+                <li><a href="#music">Music</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <h1>Happy valentines day <span>&ensp;astere</span>!!!</h1>
+        <h1>For <span>&ensp;astere</span></h1>
         <div class="paragraph">
-            <p>Yes i know this is cheesy but i unfortunately couldn't buy you a gift as i would've had to order it to your house and you know what would happen if your mum saw so i coded this instead. Happy valentines day astaraaa i love you very very much!!!!</p>
+            <p>Since it's not valentines day anymore unfortunately i have to change this little paragraph to fit the present. For example, if it was your birthday i'd change the style up a bit to fit your birthday etcccc you get what i mean xD. The song will change each time too!! I love you so so sooo MUCH and i can't wait to see you again :( </p>
         </div>
     </div>
     <div class="scroll">
@@ -23,16 +36,16 @@
     <div class="info">
         <h5>This randomly generates something so some could be repeated!</h5>
     </div>
-    <button class="naruto" onmousedown="naruto.play()"><img src="https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/07/Naruto-meme-header.jpg" width="65" height="30"</button>
+    <button id="music" class="naruto" onmousedown="naruto.play()"><img src="https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/07/Naruto-meme-header.jpg" width="65" height="30"</button>
     <div class="generatee">
         <div class="text">
             <h2 id="anime"></h2>
-            <button class="generator" onclick="generate()">something i love about you</button>
+            <button id="generator" class="generator" onclick="generate()">something i love about you</button>
         </div>
         </div>
         <script>
             var naruto = new Audio()
-            naruto.src = "arctic_monkeys_505.mp3"
+            naruto.src = "bts_dynamite.mp3"
 
             function generate() {
                 var animes = {
@@ -61,5 +74,18 @@
                 document.getElementById("episodes").innerHTML = episodes
             }
         </script>
+             <div id="profile" class="glass">
+            <div class="dashboard">
+                <div class="about-me">
+                    <img class="user" src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/84-512.png" width="170" height="170" />
+                    <h3>Astere Khadraoui</h3>
+                    <p>Trauma Surgeon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-text">
+        <p>Hi, my name's astere khadraoui and im a trauma surgeon who's happily married to saif. I graduated at Imperial college in London with a degree in medicine and it was trule an amazing experience. Im now a lead surgeon who's been in this industry for over 10 years and i absolutely love this job. (inshallah this all happens)</p>
+    </div>
 </body>
 </html>
