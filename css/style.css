@@ -5,6 +5,7 @@
     height: 1850px;
 }
 
+
 nav{
     height: 70px;
     background-color: black;
@@ -309,4 +310,70 @@ button img{
     left: 440px;
     font-family: Arial;
     font-weight: bold;
+}
+
+@media all and (max-width: 500px) {
+    body{
+        width: 100%;
+    }
+
+    .glass{
+        position: absolute;
+        left: 40%;
+        top: 210%;
+    }
+
+    .profile-text{
+        width: auto;
+        position: absolute;
+        left: auto;
+        top: 280%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container p{
+        position: absolute;
+        left: auto;
+        width: 480px;
+        top: 50%;
+    }
+
+    .naruto{
+        position: absolute;
+        left: 43%;
+        top: 120%;
+    }
+
+    .generator{
+        position: absolute;
+        left: auto;
+        top: 160%;
+        width: 480px;
+    }
+
+    .generatee h2{
+        width: 300px;
+    }
+
+    .heart1{
+        position: relative;
+        left: 30px;
+        top: 130px;
+    }
+
+    .heart2{
+        position: relative;
+        top: 100px;
+        left: 400px;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav h1{
+        margin: 5px;
+    }
+
 }
